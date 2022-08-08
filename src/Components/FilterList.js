@@ -24,7 +24,7 @@ function FilterList() {
         className="Search"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div style={{ margin: "auto 0px", display: "grid",  "grid-template-columns": "8fr 8fr", gap: 5 }}>
+      <div style={{ margin: "auto 0px", display: "grid",  "grid-template-columns": "6fr 6fr 6fr", gap: 5 }}>
         {List.sort((a, b) =>
           filter === "Rate"
             ? b.Rating - a.Rating
@@ -40,7 +40,7 @@ function FilterList() {
                 <Card.Subtitle>{item.Rating}/10</Card.Subtitle>
               </Card.Body>
             </Card>
-          ))}
+          ))};
       </div>
     </div>
   );

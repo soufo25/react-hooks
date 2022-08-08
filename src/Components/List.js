@@ -27,6 +27,20 @@ const List = [
     Des: "This is a man shotting guns ",
     url:'https://m.media-amazon.com/images/M/MV5BMjAwMzQ5NzA0OF5BMl5BanBnXkFtZTcwMjk4NTc0MQ@@._V1_FMjpg_UX1000_.jpg'
   },
+  {
+    id: 5,
+    Title: "Mile 22",
+    Rating: "8.5",
+    Des: "Hard man with tough mission ",
+    url: "https://m.media-amazon.com/images/I/81i-M29zndL.jpg"
+  },
+  {
+    id:6 ,
+    Title: "Hellboy",
+    Rating: "5",
+    Des: "Red guy with bad ashh ",
+    url: "https://m.media-amazon.com/images/M/MV5BNTc1ZWY0ZTEtZTVmNi00MTg0LTg4NmQtZTI4OWNiMmQ0MWZkXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+  },
 ];
 
 export default List;
