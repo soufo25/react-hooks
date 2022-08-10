@@ -1,38 +1,19 @@
-import { React, useState } from "react";
+import React,{ useState, useEffect } from "react";
 import List from "./List";
 import Card from "react-bootstrap/Card";
 
-function FilterList() {
-  const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState("Rate");
-  const [addMoivie, setAddMovie] = useState([]);
-  const items = Object.entries(List)
-  console.log(items);
+function FilterList({search,filter}) {
+  
+
+  
+ 
    return (
     <div style={{padding: "5px, 5px"}}>
-      <h1 style={{textAlign: 'center', backgroundColor:"wheat", marginTop: "10px"}}>My Movies</h1>
-      <label htmlFor="filter" style={{padding: "10px"}}>Filter By:</label>
-      <select
-        id="filter"
-        onChange={(e) => 
-          setFilter(e.target.value)
-        }
-      >
-        <option value="Rate">Rate</option>
-        <option value="Title">Title</option>
-      </select>
-      <label htmlFor="Search" style={{marginLeft:"300px", padding:"10px"}}> Search: </label>
-      <input
-        type="text"
-        placeholder="Search"
-        className="Search"
-        onChange={(e) => setSearch(e.target.value)} style = {{boxSizing: "border-box"}}
-      />
-      <div style = {{display: "flex", justifyContent: "center", alignItems: "right", padding: "10px"}}>
-        <button onClick={() => setAddMovie(List => [...items, ...List])} style={addMoivie}>Add Movies</button>
-      </div>
+      
+        
+       
 
-      <div style={{ margin: "auto 0px", display: "grid",  "grid-template-columns": "6fr 6fr 6fr", gap: 5 }}>
+      <div style={{ margin: "auto 0px", display: "grid",  gridTemplateColumns: "6fr 6fr 6fr", gap: "5"}}>
         {List.sort((a, b) =>
           filter === "Rate"
             ? b.Rating - a.Rating
